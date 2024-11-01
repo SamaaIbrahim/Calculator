@@ -1,0 +1,107 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1d1d1d;
+
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background:  linear-gradient(135deg, #434343, #252525);
+}
+
+.App {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(45, 45, 45, 0.9);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  gap: 30px;
+}
+
+#Res {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+
+}
+
+#res {
+ 
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 15px;
+  box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 36px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 95%;
+  margin: auto;
+  height: 100%;
+}
+
+.RowButton {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.RowButton > button {
+  flex: 1;
+  height: 60px;
+  border-radius: 12px;
+  background:linear-gradient(135deg, #ff6b6b, #d64545);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.RowButton > button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.RowButton > button:active {
+  background: #e06c75;
+  transform: translateY(0);
+}
+
+#cancel:hover {
+  background: rgba(247, 27, 27, 0.884);
+}
+
+#delete:hover {
+  background: rgba(255, 255, 80, 0.75);
+}
+
+#equal:hover {
+  background: rgba(80, 200, 80, 0.75);
+}
+
+.animated-cat {
+  text-align: center;
+}
+
+.animated-cat img {
+  width: 320px;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+}
